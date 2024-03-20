@@ -4,13 +4,15 @@ import * as S from "./Home.style";
 function Home() {
   return (
     <div>
-        <S.h2Layout>Chez vous, partout et ailleurs</S.h2Layout>
+      <S.h2Layout>
+        <S.h2>Chez vous, partout et ailleurs</S.h2>
+      </S.h2Layout>
 
       <S.container>
         {housingList.map((housing) => (
           <S.article key={housing.id}>
-              <S.img src={housing.cover} alt={housing.title} />
-              <S.h3>{housing.title}</S.h3>
+            <S.img src={housing.cover} alt={housing.title} />
+            <S.h3>{housing.title}</S.h3>
           </S.article>
         ))}
       </S.container>
