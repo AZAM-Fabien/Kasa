@@ -1,4 +1,4 @@
-import {Link as Baselink}  from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const headerLayout = styled.header`
@@ -15,12 +15,17 @@ export const nav = styled.nav`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 310px;
+  gap: 57px;
 `;
 
-export const link = styled(Baselink)`
+export const link = styled(NavLink)`
   color: black;
   text-decoration: none;
+
+  &.active {
+    text-decoration-line: underline;
+    line-height:  34.224px
+  }
 `;
 
 
