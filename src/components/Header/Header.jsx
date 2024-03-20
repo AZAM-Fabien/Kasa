@@ -1,10 +1,6 @@
 import * as S from "./Header.style";
 
 function Header() {
-  // console.log (location.pathname)
-  // const isHomePage = location.href === "http://localhost:5173/"
-  // Useeffect à utiliser ?
-  // regarder avec react router
 
   return (
     <S.headerLayout>

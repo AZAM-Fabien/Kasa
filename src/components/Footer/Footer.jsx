@@ -1,10 +1,13 @@
-function Header() {
+import * as S from "./Footer.style";
+
+function Footer() {
     return (
-      <nav>
-        hello
-    </nav>
+      <S.footerLayout>
+        <img src="\src\assets\LOGO_blanc.svg" alt="logo Kasa" />
+        <img src="\src\assets\Kasa_copyright.svg" alt="logo Kasa" />
+      </S.footerLayout>
     );
   }
   
-  export default Header;
+  export default Footer;
   
