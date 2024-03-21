@@ -9,14 +9,11 @@ import Housing from "./pages/Housing/Housing.jsx";
 import Error from "./pages/Error/Error.jsx";
 
 const theme = {
-  red_background: {
+  theme: {
     primary: "#FF6060",
-    text: "#FFFFFF",
+    second: "#F6F6F6",
   },
-  red_text: {
-    primary: "#FFFFFF",
-    text: "#FF6060",
-  },
+
 };
 
 function App() {

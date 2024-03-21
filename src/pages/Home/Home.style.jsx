@@ -33,7 +33,7 @@ export const container = styled.div`
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  background-color: #f6f6f6;
+  background-color: ${(props) => props.theme.theme.second};;
   border-radius: 25px;
   gap: ${gap};
   padding: 56px 50px;
@@ -60,7 +60,7 @@ export const img = styled.img`
 
 export const h3 = styled.h3`
   color: #fff;
-  background-color: ${(props) => props.theme.red_background.primary};
+  background-color: ${(props) => props.theme.theme.primary};
   border-radius: 10px;
   padding: 0.5vw 0.5vw 0.5vw 0.5vw;
   margin-right: 2vw;
