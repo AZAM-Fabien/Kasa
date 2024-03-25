@@ -61,7 +61,7 @@ export const img = styled.img`
 
 export const h3 = styled.h3`
   color: #fff;
-  background-color: #ff606090;
+  background-color: ${(props ) => props.theme.theme.primary60} ;
   border-radius: 5px;
   padding: 0.3vw 0.5vw 0.3vw 0.5vw;
   margin-right: 2vw;

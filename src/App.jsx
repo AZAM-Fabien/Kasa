@@ -11,9 +11,9 @@ import Error from "./pages/Error/Error.jsx";
 const theme = {
   theme: {
     primary: "#FF6060",
+    primary60: "rgb(255 96 96 / 60%)",
     second: "#F6F6F6",
   },
-
 };
 
 function App() {
