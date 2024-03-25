@@ -32,8 +32,7 @@ const Collapse = (props) => {
         </S.Container>
         <S.Description
           style={{ maxHeight: `${maxHeight}px` }}
-          isOpen={isOpen}
-          ref={contentRef} // Appliquez la ref ici pour mesurer la hauteur
+          ref={contentRef} 
         >
           <S.TextDescription>{props.description}</S.TextDescription>
         </S.Description>

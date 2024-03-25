@@ -24,7 +24,6 @@ export const link = styled(NavLink)`
 
   &.active {
     text-decoration-line: underline;
-    line-height:  34.224px
   }
 `;
 
