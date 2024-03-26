@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { NavLink } from "react-router-dom";
 
 export const h2Layout = styled.div`
   position: relative;
@@ -41,7 +42,7 @@ export const container = styled.div`
   box-sizing: border-box;
 `;
 
-export const article = styled.article`
+export const link = styled(NavLink)`
   position: relative;
   display: flex;
   flex-direction: column;

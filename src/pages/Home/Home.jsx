@@ -1,4 +1,4 @@
-import { housingList } from "../../Datas/Housing.js";
+import { housingList } from "/src/Datas/Housing.js";
 import * as S from "./Home.style";
 
 function Home() {
@@ -10,10 +10,10 @@ function Home() {
 
       <S.container>
         {housingList.map((housing) => (
-          <S.article key={housing.id}>
+          <S.link key={housing.id} to={`/Logements/${housing.id}`}>
             <S.img src={housing.cover} alt={housing.title} />
             <S.h3>{housing.title}</S.h3>
-          </S.article>
+          </S.link>
         ))}
       </S.container>
     </div>

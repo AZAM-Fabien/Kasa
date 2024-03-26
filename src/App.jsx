@@ -7,6 +7,7 @@ import Home from "./pages/Home/Home.jsx";
 import About from "./pages/About/About.jsx";
 import Housing from "./pages/Housing/Housing.jsx";
 import Error from "./pages/Error/Error.jsx";
+import { housingList } from "./Datas/Housing.js";
 
 const theme = {
   theme: {
@@ -24,7 +25,13 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/a-propos" element={<About />} />
-          <Route path="/Logements/id" element={<Housing />} />
+          {housingList.map((housing) => (
+            <Route
+              key={housing.id}
+              path={`/Logements/${housing.id}`}
+              element={<Housing id={housing.id} />}
+            />
+          ))}
           <Route path="*" element={<Error />} />
           {/* verifier si id logement n'existe pas que l'on retourne bien sur Error  */}
         </Routes>

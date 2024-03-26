@@ -1,12 +1,22 @@
+import { housingList } from "/src/Datas/Housing.js";
+import PropTypes from "prop-types";
+import Carousel from "/src/components/Slider/Slider.jsx";
 
+function Housing({ id }) {
+  const selectedHousing = housingList.find((housing) => housing.id === id);
 
+  const images = selectedHousing.pictures;
 
-function Housing() {
-    return (
-        <div>
-            <h1>Housing</h1>
-        </div>
-    );
-}   
+  return (
+    <>
+      <h1>{selectedHousing.title}</h1>
+      <Carousel images={images} />
+    </>
+  );
+}
 
-export default Housing
+Housing.propTypes = {
+  id: PropTypes.string.isRequired,
+};
+
+export default Housing;

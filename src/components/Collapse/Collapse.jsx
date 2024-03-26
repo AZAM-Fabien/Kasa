@@ -30,10 +30,7 @@ const Collapse = (props) => {
             style={arrowStyle}
           />
         </S.Container>
-        <S.Description
-          style={{ maxHeight: `${maxHeight}px` }}
-          ref={contentRef} 
-        >
+        <S.Description style={{ maxHeight: `${maxHeight}px` }} ref={contentRef}>
           <S.TextDescription>{props.description}</S.TextDescription>
         </S.Description>
       </S.Layout>
