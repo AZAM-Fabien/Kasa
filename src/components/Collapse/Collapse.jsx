@@ -16,7 +16,7 @@ const Collapse = (props) => {
     }
   }, [isOpen, contentRef]);
 
-  const arrowImage = "src/assets/arrow.svg";
+  const arrowImage = "/assets/arrow.svg";
   const arrowStyle = isOpen ? { transform: "scaleY(-1)" } : {};
   return (
     <>

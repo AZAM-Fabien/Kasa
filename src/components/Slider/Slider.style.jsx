@@ -1,15 +1,18 @@
 import styled from "styled-components";
 
-export const CarouselContainer = styled.div`
+export const SliderContainer = styled.div`
   position: relative;
-  display: flex;
   overflow: hidden;
 `;
 
 export const Image = styled.img`
   width: 100%;
-  height: auto;
+  height: 29vw;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 25px;
 `;
+
 export const ArrowR = styled.img`
   color: white;
   position: absolute;

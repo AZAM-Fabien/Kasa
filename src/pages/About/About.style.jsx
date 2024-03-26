@@ -8,7 +8,7 @@ export const mainContainer = styled.div`
 `;
 export const h2Layout = styled.div`
   position: relative;
-  background-image: url(src/assets/background_a_propos.jpg);
+  background-image: url(/assets/background_a_propos.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export const h2Layout = styled.div`
   position: relative;
-  background-image: url(src/assets/background_h2.jpg);
+  background-image: url(/assets/background_h2.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
