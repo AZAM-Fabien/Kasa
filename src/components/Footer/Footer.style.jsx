@@ -7,6 +7,7 @@ export const footerLayout = styled.footer`
     justify-content: space-between;
     padding: 66px 0px 29px 0px ;
     margin: 0px -100%;
+    margin-top: 50px;
     gap: 28.5px;
     background-color: black;
 `

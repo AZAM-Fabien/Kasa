@@ -27,17 +27,21 @@ const Slider = ({ imageSlider }) => {
           src={imageSlider[currentIndex]}
           alt={`Image ${currentIndex + 1}`}
         />
-        <S.ArrowR
-          onClick={() => handleClick("right")}
-          src={arrowRight}
-          alt="fleche droite"
-        />
-        <S.ArrowL
-          onClick={() => handleClick("left")}
-          src={arrowRight}
-          alt="fleche gauche"
-          style={arrowStyle}
-        />
+        {imageSlider.length > 1 && (
+          <>
+            <S.ArrowR
+              onClick={() => handleClick("right")}
+              src={arrowRight}
+              alt="fleche droite"
+            />
+            <S.ArrowL
+              onClick={() => handleClick("left")}
+              src={arrowRight}
+              alt="fleche gauche"
+              style={arrowStyle}
+            />
+          </>
+        )}
       </S.SliderContainer>
     </>
   );
