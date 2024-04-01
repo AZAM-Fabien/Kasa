@@ -1,11 +1,10 @@
 import * as S from "./Header.style";
 
 function Header() {
-
   return (
     <S.headerLayout>
       <S.h1Invisible>Kasa</S.h1Invisible>
-      <img src="/assets/LOGO.svg" alt="logo Kasa" />
+      <S.img src="/assets/LOGO.svg" alt="logo Kasa" />
       <S.nav>
         <S.link to="/">Accueil</S.link>
         <S.link to="/a-propos">A propos</S.link>

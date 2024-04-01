@@ -18,7 +18,7 @@ const Slider = ({ imageSlider }) => {
   };
 
   const arrowRight = "/assets/arrowRight.svg";
-  const arrowStyle = { transform: "scaleX(-1)" };
+
 
   return (
     <>
@@ -38,7 +38,6 @@ const Slider = ({ imageSlider }) => {
               onClick={() => handleClick("left")}
               src={arrowRight}
               alt="fleche gauche"
-              style={arrowStyle}
             />
           </>
         )}

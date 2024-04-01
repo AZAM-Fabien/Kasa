@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <S.h2Layout>
-        <S.h2>Chez vous, partout et ailleurs</S.h2>
+        <S.h2>Chez&nbsp;vous, partout&nbsp;et&nbsp;ailleurs</S.h2>
       </S.h2Layout>
 
       <S.container>

@@ -33,10 +33,7 @@ function Housing({ id }) {
               alt={selectedHousing.host.name}
             />
           </S.Host>
-          <Rating
-            rating={selectedHousing.rating} 
-          ></Rating>
-
+          <Rating rating={selectedHousing.rating}></Rating>
         </S.Layout3>
       </S.Layout1>
       <S.Layout4>

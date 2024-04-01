@@ -8,13 +8,27 @@ const Collapse = (props) => {
   const contentRef = React.useRef(null);
   const toggleIsOpen = () => setIsOpen(!isOpen);
 
+  const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   React.useEffect(() => {
     if (isOpen && contentRef.current) {
       setMaxHeight(contentRef.current.scrollHeight);
     } else {
       setMaxHeight(0);
     }
-  }, [isOpen, contentRef]);
+  }, [isOpen, contentRef, windowWidth]);
 
   const arrowImage = "/assets/arrow.svg";
   const arrowStyle = isOpen ? { transform: "scaleY(-1)" } : {};
@@ -41,10 +55,8 @@ const Collapse = (props) => {
 Collapse.propTypes = {
   isOpen: PropTypes.bool.isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]).isRequired,
+  description: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
+    .isRequired,
 };
 
 export default Collapse;

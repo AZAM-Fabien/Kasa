@@ -8,16 +8,25 @@ export const layout = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 139px;
+
+  @media (max-width: 768px) {
+    gap: 113px;
+  }
 `;
 
 export const h2 = styled.h2`
   color: ${(props) => props.theme.theme.primary};
   text-align: center;
-  font-size: 288px;
+  font-size: 20vw;
   font-style: normal;
   font-weight: 700;
   line-height: 142.6%;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 26vw;
+  }
+
 `;
 
 export const text = styled.p`
@@ -25,7 +34,12 @@ export const text = styled.p`
   font-size: 36px;
   font-weight: 500;
   line-height: 142.6%;
-`;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
+  `;
 
 export const link = styled(NavLink)`
   color: black;
@@ -33,4 +47,8 @@ export const link = styled(NavLink)`
   font-size: 18px;
   font-weight: 500;
   line-height: 142.6%;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;

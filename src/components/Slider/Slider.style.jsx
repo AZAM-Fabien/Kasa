@@ -11,6 +11,7 @@ export const Image = styled.img`
   object-fit: cover;
   object-position: center;
   border-radius: 25px;
+  min-height: 225px
 `;
 
 export const ArrowR = styled.img`
@@ -26,5 +27,5 @@ export const ArrowL = styled.img`
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: scaleX(-1) translateY(-50%);
 `;

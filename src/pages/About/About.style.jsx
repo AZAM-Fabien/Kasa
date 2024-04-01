@@ -1,10 +1,9 @@
 import styled from "styled-components";
 
-
 export const mainContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 export const h2Layout = styled.div`
   position: relative;
@@ -23,7 +22,7 @@ export const opacity = styled.div`
   border-radius: 25px;
   height: 100%;
   opacity: 0.3;
-  margin : 0;
+  margin: 0;
 `;
 
 export const h2 = styled.h2`
@@ -35,7 +34,7 @@ export const container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-self: center;
-  width : 84%;
+  width: 84%;
   gap: 30px;
   margin-bottom: 38px;
 `;
