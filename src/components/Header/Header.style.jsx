@@ -45,6 +45,8 @@ export const link = styled(NavLink)`
 
   @media (max-width: 768px) {
     font-size: 3vw;
+    text-transform: uppercase;
+
   }
   @media (max-width: 400px) {
     font-size: 12px;

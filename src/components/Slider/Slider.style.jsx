@@ -10,22 +10,38 @@ export const Image = styled.img`
   height: 29vw;
   object-fit: cover;
   object-position: center;
-  border-radius: 25px;
-  min-height: 225px
+  border-radius: 2.5vw;
+  min-height: 225px;
 `;
 
 export const ArrowR = styled.img`
   color: white;
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  width: 3.4vw;
 `;
 
 export const ArrowL = styled.img`
   color: white;
   position: absolute;
-  left: 0;
+  left: 20px;
   top: 50%;
   transform: scaleX(-1) translateY(-50%);
+  width: 3.4vw;
+`;
+
+export const Indicator = styled.div`
+  color: white;
+  position: absolute;
+  bottom: 3vw;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  font-weight: 500;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;

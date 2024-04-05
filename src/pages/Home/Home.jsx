@@ -12,7 +12,9 @@ function Home() {
         {housingList.map((housing) => (
           <S.link key={housing.id} to={`/Logements/${housing.id}`}>
             <S.img src={housing.cover} alt={housing.title} />
-            <S.h3>{housing.title}</S.h3>
+            <S.oppacity>
+              <S.h3>{housing.title}</S.h3>
+            </S.oppacity>
           </S.link>
         ))}
       </S.container>

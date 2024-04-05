@@ -33,7 +33,6 @@ function App() {
             />
           ))}
           <Route path="*" element={<Error />} />
-          {/* verifier si id logement n'existe pas que l'on retourne bien sur Error  */}
         </Routes>
         <Footer />
       </Router>

@@ -11,7 +11,7 @@ export const h2Layout = styled.div`
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  border-radius: 25px;
+  border-radius: 2.5vw;
   width: 100%;
   height: 15.5vw;
   margin-bottom: 38px;
@@ -19,7 +19,7 @@ export const h2Layout = styled.div`
 
 export const opacity = styled.div`
   background: black;
-  border-radius: 25px;
+  border-radius: 2.5vw;
   height: 100%;
   opacity: 0.3;
   margin: 0;

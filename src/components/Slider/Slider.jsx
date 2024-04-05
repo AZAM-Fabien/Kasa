@@ -39,6 +39,9 @@ const Slider = ({ imageSlider }) => {
               src={arrowRight}
               alt="fleche gauche"
             />
+            <S.Indicator>
+              {currentIndex + 1}/{imageSlider.length}
+            </S.Indicator>
           </>
         )}
       </S.SliderContainer>
