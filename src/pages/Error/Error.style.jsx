@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const layout = styled.div`
+  flex: 1;
   display: flex;
   padding-top: 89px;
   padding-bottom: 139px;
@@ -26,7 +27,6 @@ export const h2 = styled.h2`
   @media (max-width: 768px) {
     font-size: 26vw;
   }
-
 `;
 
 export const text = styled.p`
@@ -35,11 +35,11 @@ export const text = styled.p`
   font-weight: 500;
   line-height: 142.6%;
   text-align: center;
-  
+
   @media (max-width: 768px) {
     font-size: 18px;
   }
-  `;
+`;
 
 export const link = styled(NavLink)`
   color: black;

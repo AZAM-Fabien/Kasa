@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Main = styled.div`
+  flex: 1;
+  `;
+
 export const Layout1 = styled.div`
   display: flex;
   flex-direction: row;

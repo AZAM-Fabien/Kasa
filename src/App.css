@@ -8,3 +8,9 @@ body {
   font-family: Montserrat;
   margin: 0px 7vw;
 }
+
+#root {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}

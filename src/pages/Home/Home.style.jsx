@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
+export const main = styled.main`
+  flex: 1;
+`;
+
 export const h2Layout = styled.div`
   position: relative;
   background-image: url(/assets/background_h2.jpg);

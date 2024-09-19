@@ -3,7 +3,7 @@ import * as S from "./Home.style";
 
 function Home() {
   return (
-    <div>
+    <S.main>
       <S.h2Layout>
         <S.h2>Chez&nbsp;vous, partout&nbsp;et&nbsp;ailleurs</S.h2>
       </S.h2Layout>
@@ -18,7 +18,7 @@ function Home() {
           </S.link>
         ))}
       </S.container>
-    </div>
+    </S.main>
   );
 }
 

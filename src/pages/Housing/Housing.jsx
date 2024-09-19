@@ -10,6 +10,7 @@ function Housing({ id }) {
 
   return (
     <>
+    <S.Main>
       <Slider imageSlider={selectedHousing.pictures} />
       <S.Layout1>
         <S.Layout2>
@@ -50,6 +51,7 @@ function Housing({ id }) {
           isOpen={false}
         ></Collapse>
       </S.Layout4>
+      </S.main>
     </>
   );
 }
