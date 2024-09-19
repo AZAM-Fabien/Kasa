@@ -51,7 +51,7 @@ function Housing({ id }) {
           isOpen={false}
         ></Collapse>
       </S.Layout4>
-      </S.main>
+      </S.Main>
     </>
   );
 }
